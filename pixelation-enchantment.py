@@ -92,7 +92,7 @@ w = blockimg
 temp = cv2.resize(res2, (h, w), interpolation=cv2.INTER_LINEAR)
 
 # Initialize output image
-
+temp = cv2.resize(temp, (width, height), interpolation=cv2.INTER_NEAREST)
 
 plt.figure()
 plt.axis("off")
